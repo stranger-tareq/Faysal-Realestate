@@ -122,7 +122,7 @@ const translations = {
         facing: 'South',
         status: 'Ready for Registry',
         features: ['Boundary Wall', 'Electric Connection', 'Wide Road Access', 'Home with 2 rooms and a balcony'],
-        imageUrl: 'https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&q=80&w=1200',
+        imageUrl: 'https://static.vecteezy.com/system/resources/thumbnails/014/445/766/small/land-plot-for-building-house-aerial-view-land-field-with-pins-pin-location-for-housing-subdivision-residential-development-owned-sale-rent-buy-or-investment-home-or-house-expand-the-city-suburb-free-photo.JPG',
         googleMapsUrl: 'https://maps.google.com/?q=Rajendrapur+Gazipur',
       },
       {
@@ -134,7 +134,7 @@ const translations = {
         facing: 'East',
         status: 'Ready for Registry',
         features: ['Boundary Wall', 'Wide Road Access'],
-        imageUrl: 'https://images.unsplash.com/photo-1500206329814-a15d11c28c63?auto=format&fit=crop&q=80&w=1200',
+        imageUrl: 'https://static.vecteezy.com/system/resources/thumbnails/014/445/766/small/land-plot-for-building-house-aerial-view-land-field-with-pins-pin-location-for-housing-subdivision-residential-development-owned-sale-rent-buy-or-investment-home-or-house-expand-the-city-suburb-free-photo.JPG',
         googleMapsUrl: 'https://maps.google.com/?q=Bhawal+National+Park+Gazipur',
       },
       {
@@ -146,7 +146,7 @@ const translations = {
         facing: 'South',
         status: 'Ready for Registry',
         features: ['Wide Road Access', 'Boundary Wall'],
-        imageUrl: 'https://images.unsplash.com/photo-1430285561322-780c604615c5?auto=format&fit=crop&q=80&w=1200',
+        imageUrl: 'https://static.vecteezy.com/system/resources/thumbnails/014/445/766/small/land-plot-for-building-house-aerial-view-land-field-with-pins-pin-location-for-housing-subdivision-residential-development-owned-sale-rent-buy-or-investment-home-or-house-expand-the-city-suburb-free-photo.JPG',
         googleMapsUrl: 'https://maps.google.com/?q=Bhanua+Gazipur',
       },
     ],
@@ -312,7 +312,7 @@ const translations = {
         facing: 'দক্ষিণ',
         status: 'রেজিস্ট্রির জন্য প্রস্তুত',
         features: ['সীমানা প্রাচীর', 'বিদ্যুৎ সংযোগ', 'প্রশস্ত রাস্তা', '২টি বেডরুম এবং একটি বারান্দাসহ বাড়ি'],
-        imageUrl: 'https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&q=80&w=1200',
+        imageUrl: 'https://static.vecteezy.com/system/resources/thumbnails/014/445/766/small/land-plot-for-building-house-aerial-view-land-field-with-pins-pin-location-for-housing-subdivision-residential-development-owned-sale-rent-buy-or-investment-home-or-house-expand-the-city-suburb-free-photo.JPG',
         googleMapsUrl: 'https://maps.google.com/?q=Rajendrapur+Gazipur',
       },
       {
@@ -324,7 +324,7 @@ const translations = {
         facing: 'পূর্ব',
         status: 'রেজিস্ট্রির জন্য প্রস্তুত',
         features: ['সীমানা প্রাচীর', 'প্রশস্ত রাস্তা'],
-        imageUrl: 'https://images.unsplash.com/photo-1500206329814-a15d11c28c63?auto=format&fit=crop&q=80&w=1200',
+        imageUrl: 'https://static.vecteezy.com/system/resources/thumbnails/014/445/766/small/land-plot-for-building-house-aerial-view-land-field-with-pins-pin-location-for-housing-subdivision-residential-development-owned-sale-rent-buy-or-investment-home-or-house-expand-the-city-suburb-free-photo.JPG',
         googleMapsUrl: 'https://maps.google.com/?q=Bhawal+National+Park+Gazipur',
       },
       {
@@ -336,7 +336,7 @@ const translations = {
         facing: 'দক্ষিণ',
         status: 'রেজিস্ট্রির জন্য প্রস্তুত',
         features: ['প্রশস্ত রাস্তা', 'সীমানা প্রাচীর'],
-        imageUrl: 'https://images.unsplash.com/photo-1430285561322-780c604615c5?auto=format&fit=crop&q=80&w=1200',
+        imageUrl: 'https://static.vecteezy.com/system/resources/thumbnails/014/445/766/small/land-plot-for-building-house-aerial-view-land-field-with-pins-pin-location-for-housing-subdivision-residential-development-owned-sale-rent-buy-or-investment-home-or-house-expand-the-city-suburb-free-photo.JPG',
         googleMapsUrl: 'https://maps.google.com/?q=Rajendrapur+Gazipur',
       },
     ],

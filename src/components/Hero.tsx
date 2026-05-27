@@ -12,14 +12,14 @@ export default function Hero() {
 
   return (
     <section id="home" className="relative full-screen-section min-h-[600px] md:min-h-[700px] flex flex-col justify-center overflow-hidden">
-      {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0">
-        <img
-          src="https://images.unsplash.com/photo-1613490900233-08b345f563d4?auto=format&fit=crop&q=80&w=2000"
-          alt="Modern Luxury Real Estate"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a] via-[rgba(10,10,10,0.6)] to-transparent" />
+      {/* Vibrant Warm Animated Gradient Background */}
+      <div className="absolute inset-0 z-0 bg-zinc-900 overflow-hidden">
+        {/* Animated gradient shapes */}
+        <div className="absolute -top-[20%] -left-[10%] w-[70%] h-[70%] rounded-full bg-gradient-to-tr from-amber-500 to-orange-600 blur-[120px] opacity-60" />
+        <div className="absolute top-[10%] -right-[10%] w-[60%] h-[80%] rounded-full bg-gradient-to-br from-rose-600 to-pink-700 blur-[120px] opacity-50" />
+        <div className="absolute -bottom-[20%] left-[20%] w-[80%] h-[60%] rounded-full bg-gradient-to-r from-orange-600 to-red-600 blur-[120px] opacity-50" />
+        {/* Subtle dark overlay to ensure text legibility */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-zinc-900/40 to-zinc-950/80" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-32 md:pt-40 lg:pt-48 pb-12 md:pb-20">
