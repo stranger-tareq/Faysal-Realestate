@@ -63,10 +63,10 @@ export default function FlatSupport() {
             className="flex-1 grid grid-cols-2 gap-4 relative z-10 hover:-translate-y-2 transition-transform duration-500"
           >
             <div className="aspect-square bg-brand-mint/20 rounded-3xl overflow-hidden border border-brand-mint">
-               <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800" className="w-full h-full object-cover" />
+               <img loading="lazy" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800" className="w-full h-full object-cover" />
             </div>
             <div className="aspect-square bg-brand-mint/20 rounded-3xl overflow-hidden mt-8 border border-brand-mint">
-               <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&q=80&w=800" className="w-full h-full object-cover" />
+               <img loading="lazy" src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&q=80&w=800" className="w-full h-full object-cover" />
             </div>
           </motion.div>
         </div>

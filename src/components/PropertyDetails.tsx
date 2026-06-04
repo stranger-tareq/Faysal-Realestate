@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { MapPin, Bed, Bath, Maximize2, CheckCircle2, MessageSquare, ArrowLeft } from 'lucide-react';
+import { MapPin, Bed, Bath, Maximize2, CheckCircle2, MessageSquare, ArrowLeft, ArrowRight } from 'lucide-react';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import { useTranslation } from '../LanguageContext';
@@ -12,6 +12,7 @@ export default function PropertyDetails() {
   const { t } = useTranslation();
   const [property, setProperty] = useState<any>(null);
   const [loading, setLoading] = useState(true);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -50,6 +51,23 @@ export default function PropertyDetails() {
 
   if (!property) return null;
 
+  const images = property?.images?.length ? property.images : [property?.imageUrl || 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1200'];
+
+  // Handle image sliding
+  useEffect(() => {
+    if (images.length <= 1) return;
+    
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 3000);
+    
+    return () => clearInterval(interval);
+  }, [images.length]);
+
+  const handleNextImage = () => {
+    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
   const whatsappUrl = `https://wa.me/8801711262623?text=${encodeURIComponent(
     `Hi, I am interested in your property: ${property.name} in ${property.location}. Please provide more details.`
   )}`;
@@ -80,12 +98,22 @@ export default function PropertyDetails() {
               animate={{ opacity: 1, y: 0 }} 
               className="space-y-8"
             >
-              <div className="rounded-3xl overflow-hidden shadow-2xl border border-brand-mint/50">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-brand-mint/50 group">
                 <img 
-                  src={property.imageUrl || 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80&w=1200'} 
+                  src={images[currentImageIndex]} 
                   alt={property.name}
-                  className="w-full h-[500px] object-cover"
+                  loading="lazy"
+                  className="w-full h-[500px] object-cover transition-opacity duration-500"
                 />
+                {images.length > 1 && (
+                  <button 
+                    onClick={handleNextImage} 
+                    className="absolute right-4 top-1/2 -translate-y-1/2 p-3 bg-white/80 hover:bg-white text-brand-green rounded-full shadow-lg backdrop-blur-sm transition-all opacity-0 group-hover:opacity-100 focus:opacity-100"
+                    aria-label="Next Image"
+                  >
+                    <ArrowRight className="w-6 h-6" />
+                  </button>
+                )}
               </div>
               
               <div className="bg-white rounded-3xl p-8 border border-brand-mint/50 shadow-xl shadow-brand-green/5">

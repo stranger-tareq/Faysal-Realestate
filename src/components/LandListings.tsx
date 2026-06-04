@@ -59,6 +59,7 @@ export default function LandListings() {
                 <div className="lg:w-2/5 relative h-64 lg:h-auto overflow-hidden">
                   <img
                     src={plot.imageUrl}
+                    loading="lazy"
                     alt={plot.name}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />

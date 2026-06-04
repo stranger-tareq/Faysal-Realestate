@@ -3,6 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+import React, { useState, useEffect } from 'react';
 import { Bed, Bath, Layout, Maximize2, MapPin, CheckCircle2, MessageSquare, ArrowRight } from 'lucide-react';
 import { Property } from '../data/properties';
 import { motion } from 'motion/react';
@@ -17,7 +18,26 @@ interface PropertyCardProps {
 
 export default function PropertyCard({ property, index }: PropertyCardProps) {
   const { t } = useTranslation();
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
   
+  const images = property?.images?.length ? property.images : [property?.imageUrl || 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1200'];
+
+  // Handle image sliding
+  useEffect(() => {
+    if (images.length <= 1) return;
+    
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 3000);
+    
+    return () => clearInterval(interval);
+  }, [images.length]);
+
+  const handleNextImage = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
   const whatsappUrl = `https://wa.me/8801711262623?text=${encodeURIComponent(
     `Hi, I am interested in your property: ${property.name} in ${property.location}. Please provide more details.`
   )}`;
@@ -30,13 +50,23 @@ export default function PropertyCard({ property, index }: PropertyCardProps) {
       transition={{ delay: index * 0.1, duration: 0.5 }}
       className="group flex flex-col bg-white rounded-3xl overflow-hidden border border-brand-mint/50 transition-all hover:shadow-[0_20px_40px_-15px_rgba(27,94,32,0.1)] hover:-translate-y-2"
     >
-      <Link to={`/property/${property.id}`} className="relative h-64 overflow-hidden block">
+      <Link to={`/property/${property.id}`} className="relative h-64 overflow-hidden block group/image">
         <img
-          src={property.imageUrl || 'https://images.unsplash.com/photo-1629196914214-411bd1a221f7?auto=format&fit=crop&q=80&w=1200'}
+          src={images[currentImageIndex]}
           alt={property.name}
-          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+          loading="lazy"
+          className="w-full h-full object-cover transition-opacity duration-500 group-hover:scale-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        {images.length > 1 && (
+          <button 
+            onClick={handleNextImage} 
+            className="absolute right-3 top-1/2 -translate-y-1/2 p-2 bg-white/80 hover:bg-white text-brand-green rounded-full shadow-lg backdrop-blur-sm transition-all opacity-0 group-hover/image:opacity-100 focus:opacity-100 z-10"
+            aria-label="Next Image"
+          >
+            <ArrowRight className="w-4 h-4" />
+          </button>
+        )}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
         <div className="absolute top-4 left-4 flex gap-2">
           <span className="px-3 py-1 bg-brand-green/90 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-widest rounded-full cursor-default shadow-sm">
             {property.status === 'Ready' ? t('statusReady') : property.status === 'Handover Soon' ? t('statusSoon') : property.status}

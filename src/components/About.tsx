@@ -50,6 +50,7 @@ export default function About() {
                className="relative z-10 aspect-[4/5] rounded-[60px] overflow-hidden shadow-2xl border border-brand-mint/50"
              >
                 <img 
+                   loading="lazy"
                    src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=1200" 
                    alt="Handing over keys to home owner" 
                    className="w-full h-full object-cover"
