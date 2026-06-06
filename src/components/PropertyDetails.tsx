@@ -34,15 +34,7 @@ export default function PropertyDetails() {
   const images = property?.images?.length ? property.images : property ? [property?.imageUrl || 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1200'] : [];
 
   // Handle image sliding
-  useEffect(() => {
-    if (images.length <= 1) return;
-    
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000);
-    
-    return () => clearInterval(interval);
-  }, [images.length]);
+  // Removed automatic sliding as per request
 
   if (loading) {
     return (
@@ -66,6 +58,10 @@ export default function PropertyDetails() {
 
   const handleNextImage = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
+  const handlePrevImage = () => {
+    setCurrentImageIndex((prevIndex) => prevIndex === 0 ? images.length - 1 : prevIndex - 1);
   };
 
   const whatsappUrl = `https://wa.me/8801711262623?text=${encodeURIComponent(
@@ -103,16 +99,25 @@ export default function PropertyDetails() {
                   src={images[currentImageIndex]} 
                   alt={property.name}
                   loading="lazy"
-                  className="w-full h-[500px] object-cover transition-opacity duration-500"
+                  className="w-full h-[500px] object-contain bg-zinc-50 transition-opacity duration-500"
                 />
                 {images.length > 1 && (
-                  <button 
-                    onClick={handleNextImage} 
-                    className="absolute right-4 top-1/2 -translate-y-1/2 p-3 bg-white/80 hover:bg-white text-brand-green rounded-full shadow-lg backdrop-blur-sm transition-all opacity-0 group-hover:opacity-100 focus:opacity-100"
-                    aria-label="Next Image"
-                  >
-                    <ArrowRight className="w-6 h-6" />
-                  </button>
+                  <>
+                    <button 
+                      onClick={handlePrevImage} 
+                      className="absolute left-4 top-1/2 -translate-y-1/2 p-3 bg-white/80 hover:bg-white text-brand-green rounded-full shadow-lg backdrop-blur-sm transition-all opacity-0 group-hover:opacity-100 focus:opacity-100 z-10"
+                      aria-label="Previous Image"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                    </button>
+                    <button 
+                      onClick={handleNextImage} 
+                      className="absolute right-4 top-1/2 -translate-y-1/2 p-3 bg-white/80 hover:bg-white text-brand-green rounded-full shadow-lg backdrop-blur-sm transition-all opacity-0 group-hover:opacity-100 focus:opacity-100 z-10"
+                      aria-label="Next Image"
+                    >
+                      <ArrowRight className="w-6 h-6" />
+                    </button>
+                  </>
                 )}
               </div>
               

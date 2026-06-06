@@ -23,15 +23,7 @@ export default function PropertyCard({ property, index }: PropertyCardProps) {
   const images = property?.images?.length ? property.images : [property?.imageUrl || 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1200'];
 
   // Handle image sliding
-  useEffect(() => {
-    if (images.length <= 1) return;
-    
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000);
-    
-    return () => clearInterval(interval);
-  }, [images.length]);
+  // Removed automatic sliding as per request
 
   const handleNextImage = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -62,7 +54,7 @@ export default function PropertyCard({ property, index }: PropertyCardProps) {
           src={images[currentImageIndex]}
           alt={property.name}
           loading="lazy"
-          className="w-full h-full object-cover transition-opacity duration-500 group-hover:scale-105"
+          className="w-full h-full object-contain bg-zinc-50 transition-opacity duration-500 group-hover:scale-105"
         />
         {images.length > 1 && (
           <>

@@ -55,13 +55,13 @@ export default function LandListings() {
               transition={{ delay: index * 0.1 }}
               className="group bg-white rounded-[40px] overflow-hidden border border-brand-mint/50 transition-all hover:shadow-[0_20px_40px_-15px_rgba(27,94,32,0.1)] hover:-translate-y-2"
             >
-              <div className="flex flex-col lg:flex-row h-full">
-                <div className="lg:w-2/5 relative h-64 lg:h-auto overflow-hidden">
+              <div className="flex flex-col h-full">
+                <div className="relative h-64 sm:h-72 overflow-hidden">
                   <img
                     src={plot.imageUrl}
                     loading="lazy"
                     alt={plot.name}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="w-full h-full object-contain bg-zinc-50 transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   <div className="absolute top-6 left-6">
@@ -71,7 +71,7 @@ export default function LandListings() {
                   </div>
                 </div>
                 
-                <div className="lg:w-3/5 p-8 flex flex-col justify-between">
+                <div className="p-6 md:p-8 flex flex-col justify-between flex-grow">
                   <div>
                     <div className="flex justify-between items-start mb-4">
                       <h3 className="text-2xl font-serif font-bold text-brand-charcoal group-hover:text-brand-green-light transition-colors">{plot.name}</h3>
