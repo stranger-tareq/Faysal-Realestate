@@ -35,7 +35,14 @@ export default function PropertyCard({ property, index }: PropertyCardProps) {
 
   const handleNextImage = (e: React.MouseEvent) => {
     e.preventDefault();
+    e.stopPropagation();
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
+  const handlePrevImage = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setCurrentImageIndex((prevIndex) => prevIndex === 0 ? images.length - 1 : prevIndex - 1);
   };
 
   const whatsappUrl = `https://wa.me/8801711262623?text=${encodeURIComponent(
@@ -58,13 +65,22 @@ export default function PropertyCard({ property, index }: PropertyCardProps) {
           className="w-full h-full object-cover transition-opacity duration-500 group-hover:scale-105"
         />
         {images.length > 1 && (
-          <button 
-            onClick={handleNextImage} 
-            className="absolute right-3 top-1/2 -translate-y-1/2 p-2 bg-white/80 hover:bg-white text-brand-green rounded-full shadow-lg backdrop-blur-sm transition-all opacity-0 group-hover/image:opacity-100 focus:opacity-100 z-10"
-            aria-label="Next Image"
-          >
-            <ArrowRight className="w-4 h-4" />
-          </button>
+          <>
+            <button 
+              onClick={handlePrevImage} 
+              className="absolute left-3 top-1/2 -translate-y-1/2 p-2 bg-white/80 hover:bg-white text-brand-green rounded-full shadow-lg backdrop-blur-sm transition-all opacity-0 group-hover/image:opacity-100 focus:opacity-100 z-10"
+              aria-label="Previous Image"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+            </button>
+            <button 
+              onClick={handleNextImage} 
+              className="absolute right-3 top-1/2 -translate-y-1/2 p-2 bg-white/80 hover:bg-white text-brand-green rounded-full shadow-lg backdrop-blur-sm transition-all opacity-0 group-hover/image:opacity-100 focus:opacity-100 z-10"
+              aria-label="Next Image"
+            >
+              <ArrowRight className="w-4 h-4" />
+            </button>
+          </>
         )}
         <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
         <div className="absolute top-4 left-4 flex gap-2">
@@ -78,9 +94,8 @@ export default function PropertyCard({ property, index }: PropertyCardProps) {
       </Link>
 
       <div className="p-6 flex flex-col flex-grow">
-        <Link to={`/property/${property.id}`} className="flex justify-between items-start mb-2 group-hover:text-brand-green-light transition-colors">
-          <h3 className="text-xl font-serif font-bold text-brand-charcoal transition-colors">{property.name}</h3>
-          <span className="text-lg font-bold text-brand-green whitespace-nowrap ml-2">{property.price || 'Contact'}</span>
+        <Link to={`/property/${property.id}`} className="block mb-2 group-hover:text-brand-green-light transition-colors">
+          <h3 className="text-xl font-serif font-bold text-brand-charcoal transition-colors leading-tight line-clamp-2">{property.name}</h3>
         </Link>
 
         <div className="flex items-center gap-1 text-zinc-500 text-sm mb-4 font-medium">
@@ -112,21 +127,24 @@ export default function PropertyCard({ property, index }: PropertyCardProps) {
           ))}
         </div>
 
-        <div className="flex gap-2 mt-auto">
+        <div className="flex items-center gap-2 mt-auto pt-2">
+          <span className="flex-1 text-xs md:text-sm font-bold text-brand-green leading-tight pr-2">
+            {property.price || 'Contact for best price'}
+          </span>
           <a
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 flex items-center justify-center gap-2 py-3 bg-[#25D366] text-white rounded-xl font-bold text-sm transition-all hover:bg-[#1DA851] hover:shadow-lg hover:shadow-[#25D366]/20"
+            className="flex items-center justify-center gap-2 px-3 py-3 bg-[#25D366] text-white rounded-xl font-bold text-sm transition-all hover:bg-[#1DA851] hover:shadow-lg hover:shadow-[#25D366]/20 shrink-0"
           >
             <MessageSquare className="w-4 h-4" />
-            {t('whatsapp')}
+            <span className="hidden sm:inline">{t('whatsapp')}</span>
           </a>
           <a
             href={property.googleMapsUrl || "#"}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 flex items-center justify-center bg-brand-sand text-brand-green rounded-xl border border-brand-mint hover:bg-brand-mint hover:text-brand-green-light transition-colors"
+            className="w-11 py-3 flex items-center justify-center bg-brand-sand text-brand-green rounded-xl border border-brand-mint hover:bg-brand-mint hover:text-brand-green-light transition-colors shrink-0"
             title="View on Map"
           >
             <MapPin className="w-4 h-4 font-bold" />

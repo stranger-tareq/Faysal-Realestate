@@ -31,6 +31,19 @@ export default function PropertyDetails() {
     fetchProperty();
   }, [id, navigate, t]);
 
+  const images = property?.images?.length ? property.images : property ? [property?.imageUrl || 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1200'] : [];
+
+  // Handle image sliding
+  useEffect(() => {
+    if (images.length <= 1) return;
+    
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 3000);
+    
+    return () => clearInterval(interval);
+  }, [images.length]);
+
   if (loading) {
     return (
       <div className="full-screen-section bg-brand-sand flex flex-col">
@@ -50,19 +63,6 @@ export default function PropertyDetails() {
   }
 
   if (!property) return null;
-
-  const images = property?.images?.length ? property.images : [property?.imageUrl || 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1200'];
-
-  // Handle image sliding
-  useEffect(() => {
-    if (images.length <= 1) return;
-    
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000);
-    
-    return () => clearInterval(interval);
-  }, [images.length]);
 
   const handleNextImage = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
