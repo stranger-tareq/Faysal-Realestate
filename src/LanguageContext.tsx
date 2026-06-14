@@ -92,12 +92,12 @@ const translations = {
         facing: 'South-Facing',
         status: 'Ready',
         features: ['Parking', '2 Lifts', 'Generator', '24/7 Security', 'Substation'],
-        imageUrl: 'https://scontent.fdac138-2.fna.fbcdn.net/v/t39.30808-6/715590188_994771589764773_7830774232884910077_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=gHl1vqGwRxAQ7kNvwFYExm7&_nc_oc=Adqucsb5NQ2FXNEW4LecK7NbEXaqfTKGCWbfzF9Qn8ORFSiJCMEtRCB5sl5_9UJrAv0&_nc_zt=23&_nc_ht=scontent.fdac138-2.fna&_nc_gid=nYcgEBsRGC1DrVSrWjyNjA&_nc_ss=7b2a8&oh=00_Af9SompabJ7gOiJOkqBWJAX-kSXlWgVwcMw3m3ouxdY2rA&oe=6A25BE25',
+        imageUrl: 'https://lh3.googleusercontent.com/d/11HiDVwFv9DqLGF8_AZG2VhJjKvYM81vC',
         images: [
-          'https://scontent.fdac138-2.fna.fbcdn.net/v/t39.30808-6/715590188_994771589764773_7830774232884910077_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=gHl1vqGwRxAQ7kNvwFYExm7&_nc_oc=Adqucsb5NQ2FXNEW4LecK7NbEXaqfTKGCWbfzF9Qn8ORFSiJCMEtRCB5sl5_9UJrAv0&_nc_zt=23&_nc_ht=scontent.fdac138-2.fna&_nc_gid=nYcgEBsRGC1DrVSrWjyNjA&_nc_ss=7b2a8&oh=00_Af9SompabJ7gOiJOkqBWJAX-kSXlWgVwcMw3m3ouxdY2rA&oe=6A25BE25',
-          'https://scontent.fdac138-2.fna.fbcdn.net/v/t39.30808-6/715516705_994771656431433_2753176567845409024_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=OOL5IB_Nle4Q7kNvwF_al4M&_nc_oc=AdrctLlwGYG6l8lTQlC2cGup-1ATqjwvi1kh92oTeriQIjeB-tucf_Jw--9n6a65Zlk&_nc_zt=23&_nc_ht=scontent.fdac138-2.fna&_nc_gid=nYcgEBsRGC1DrVSrWjyNjA&_nc_ss=7b2a8&oh=00_Af8mGbCqtVwpRIaG8FZJq_0QLxpWv_uXmrfLtbLZijR_2g&oe=6A25A036',
-          'https://scontent.fdac138-2.fna.fbcdn.net/v/t39.30808-6/714085149_994771603098105_5797864671435428014_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=WgWwEZ6ooM4Q7kNvwFxm8eG&_nc_oc=AdrBvHnHATZmJMRDBc-KndQdIlv5Sayrs48_xigUwPv9C_KMPa19LFCY4bcf3WOdDC8&_nc_zt=23&_nc_ht=scontent.fdac138-2.fna&_nc_gid=nYcgEBsRGC1DrVSrWjyNjA&_nc_ss=7b2a8&oh=00_Af-bS5zdSaYAQh7VSPn30-2HGHJ7ZFAY_oSC7AxPAJ0WLw&oe=6A25C257',
-          'https://scontent.fdac138-2.fna.fbcdn.net/v/t39.30808-6/715540329_994780133097252_891881290888773583_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=3ZozSlQ0NOIQ7kNvwEV9Mwg&_nc_oc=Ado2aBcoM_MTd2MmjU8mediYrc4Vv_PTe2Hij9Wqoajc0jCQdbHIXmibzSKULesvfkw&_nc_zt=23&_nc_ht=scontent.fdac138-2.fna&_nc_gid=nYcgEBsRGC1DrVSrWjyNjA&_nc_ss=7b2a8&oh=00_Af_qZW5kqG5iEWyEqjYLD5zSPv1k_YSqF0wvSZbOBN0oUw&oe=6A25BF92'
+          'https://lh3.googleusercontent.com/d/11HiDVwFv9DqLGF8_AZG2VhJjKvYM81vC',
+          'https://lh3.googleusercontent.com/d/1u_Achh84RK82E2nOB1VUm9Wzp0bbzfB3',
+          'https://lh3.googleusercontent.com/d/1uhyi0ZY0-bV-bJGXK0km2_y8t8Qu8ZS2',
+          'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200'
         ],
         googleMapsUrl: 'https://maps.google.com/?q=Joydebpur+Gazipur',
       },
@@ -114,14 +114,13 @@ const translations = {
         facing: 'East-Facing',
         status: 'Ready',
         features: ['2 Lifts', '24/7 Security', 'Parking', 'Generator', 'Substation'],
-        imageUrl: 'https://scontent.fdac138-2.fna.fbcdn.net/v/t39.30808-6/714383579_995889942986271_8505767854631164332_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ETsexLEK7s8Q7kNvwEhWb7z&_nc_oc=AdpCstDeM0Gpywa_2dwkRjXo-IoBMvrb7MoGOjJ_QmGwvxSLZTWKlYoc2D6K45-T2XQ&_nc_zt=23&_nc_ht=scontent.fdac138-2.fna&_nc_gid=M0ESZUbMYYCkYEx0cjSSKw&_nc_ss=7b2a8&oh=00_Af8CqjN6l17AFeDQvGAOx8E0YXswJvVwALyP3ATEskQYFw&oe=6A274B99',
+        imageUrl: 'https://lh3.googleusercontent.com/d/11HiDVwFv9DqLGF8_AZG2VhJjKvYM81vC',
         images: [
-          'https://scontent.fdac138-2.fna.fbcdn.net/v/t39.30808-6/714383579_995889942986271_8505767854631164332_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ETsexLEK7s8Q7kNvwEhWb7z&_nc_oc=AdpCstDeM0Gpywa_2dwkRjXo-IoBMvrb7MoGOjJ_QmGwvxSLZTWKlYoc2D6K45-T2XQ&_nc_zt=23&_nc_ht=scontent.fdac138-2.fna&_nc_gid=M0ESZUbMYYCkYEx0cjSSKw&_nc_ss=7b2a8&oh=00_Af8CqjN6l17AFeDQvGAOx8E0YXswJvVwALyP3ATEskQYFw&oe=6A274B99',
-          'https://scontent.fdac138-2.fna.fbcdn.net/v/t39.30808-6/715291267_995889886319610_6385127719888871707_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=pq63u7lxAaQQ7kNvwFVvULP&_nc_oc=Adrwh17MDlzDKKyhGzjOdFePmqlzJcaExP-bctVMU-Ze5iX7W1--BVYqaRBys5gmS9E&_nc_zt=23&_nc_ht=scontent.fdac138-2.fna&_nc_gid=EAGTrOY6oEddOafuvRSu-A&_nc_ss=7b2a8&oh=00_Af-r_GWz7FTN5dMhT6IIhpFqwG9PXIaEK0i6FT_M-6r2Jg&oe=6A2763EA',
-          'https://scontent.fdac138-1.fna.fbcdn.net/v/t39.30808-6/714852639_995890022986263_447910061425228364_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=B80QU4LWGCQQ7kNvwGXlaMz&_nc_oc=AdrfjcEvUIwTD9sW1QgfoLbvhdnp313847Gz9X9F2O-oIBOitJQRXk5EDF0SS1lP35w&_nc_zt=23&_nc_ht=scontent.fdac138-1.fna&_nc_gid=KERi_56c2ZfLQ-C-fIEyUw&_nc_ss=7b2a8&oh=00_Af-ztnjc5NF4kFHmFSl0-ekmghT8Zs8IaPBPaAYZWfAF_g&oe=6A2760B4',
-          'https://scontent.fdac138-1.fna.fbcdn.net/v/t39.30808-6/714723251_995890082986257_5173604162516039693_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=REXRkWyszgsQ7kNvwHn3tjh&_nc_oc=AdqbruAVvQwH0AfrB6JXkgb-aTF_bmoPEE6zIs_fkF-QT-xZlcdPw_29PHl4ZLzQnbU&_nc_zt=23&_nc_ht=scontent.fdac138-1.fna&_nc_gid=zTf1FepCggbSacdJoN-6Rw&_nc_ss=7b2a8&oh=00_Af9v5R8A7-b1p8zUNHfevmCWBSyFVqZAPHAexqXdLwYVJg&oe=6A276133',
-          'https://scontent.fdac138-2.fna.fbcdn.net/v/t39.30808-6/714851494_995890059652926_9021158554923691026_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=wHvjxODm6FUQ7kNvwHQiv7r&_nc_oc=AdqrpPzuG5_YjPrS-j2eqs4Rus84cqZIaZwtAjPL4ZrlwH7O7TZotZLrywbBi-6OKig&_nc_zt=23&_nc_ht=scontent.fdac138-2.fna&_nc_gid=Fm4ifkuI-y0YKt0ygJIubQ&_nc_ss=7b2a8&oh=00_Af-W7PVl3x76WFZjfAd6A6fHRZLp-PFeRT3CPc6CSwbyLg&oe=6A275521',
-          'https://scontent.fdac138-2.fna.fbcdn.net/v/t39.30808-6/716431210_995889889652943_8564696464819572722_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=JF5T_TpYgrUQ7kNvwEBmGo5&_nc_oc=AdqkW9e7aZgseYuuMaCYDa0EhKi1Sb7ahbT_KUIEYXrE4uvUODeF28BE9NKkTWDDao0&_nc_zt=23&_nc_ht=scontent.fdac138-2.fna&_nc_gid=HxEv2GrIE4OPGh3eadm-nQ&_nc_ss=7b2a8&oh=00_Af-mfj6Nrq4siZLLeaUEc7huGP9kM_8OKDHWWWbr1bcAgA&oe=6A2751F5'
+          'https://lh3.googleusercontent.com/d/11HiDVwFv9DqLGF8_AZG2VhJjKvYM81vC',
+          'https://lh3.googleusercontent.com/d/1u_Achh84RK82E2nOB1VUm9Wzp0bbzfB3',
+          'https://lh3.googleusercontent.com/d/1uhyi0ZY0-bV-bJGXK0km2_y8t8Qu8ZS2',
+          'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&q=80&w=1200',
+          'https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&q=80&w=1200'
         ],
         googleMapsUrl: 'https://maps.google.com/?q=Board+Bazar+Gazipur',
       },
@@ -308,12 +307,12 @@ const translations = {
         facing: 'দক্ষিণমুখী',
         status: 'প্রস্তুত',
         features: ['পার্কিং', '২টি লিফট', 'জেনারেটর', '২৪/৭ নিরাপত্তা', 'সাব-স্টেশন'],
-        imageUrl: 'https://scontent.fdac138-2.fna.fbcdn.net/v/t39.30808-6/715590188_994771589764773_7830774232884910077_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=gHl1vqGwRxAQ7kNvwFYExm7&_nc_oc=Adqucsb5NQ2FXNEW4LecK7NbEXaqfTKGCWbfzF9Qn8ORFSiJCMEtRCB5sl5_9UJrAv0&_nc_zt=23&_nc_ht=scontent.fdac138-2.fna&_nc_gid=nYcgEBsRGC1DrVSrWjyNjA&_nc_ss=7b2a8&oh=00_Af9SompabJ7gOiJOkqBWJAX-kSXlWgVwcMw3m3ouxdY2rA&oe=6A25BE25',
+        imageUrl: 'https://lh3.googleusercontent.com/d/11HiDVwFv9DqLGF8_AZG2VhJjKvYM81vC',
         images: [
-          'https://scontent.fdac138-2.fna.fbcdn.net/v/t39.30808-6/715590188_994771589764773_7830774232884910077_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=gHl1vqGwRxAQ7kNvwFYExm7&_nc_oc=Adqucsb5NQ2FXNEW4LecK7NbEXaqfTKGCWbfzF9Qn8ORFSiJCMEtRCB5sl5_9UJrAv0&_nc_zt=23&_nc_ht=scontent.fdac138-2.fna&_nc_gid=nYcgEBsRGC1DrVSrWjyNjA&_nc_ss=7b2a8&oh=00_Af9SompabJ7gOiJOkqBWJAX-kSXlWgVwcMw3m3ouxdY2rA&oe=6A25BE25',
-          'https://scontent.fdac138-2.fna.fbcdn.net/v/t39.30808-6/715516705_994771656431433_2753176567845409024_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=OOL5IB_Nle4Q7kNvwF_al4M&_nc_oc=AdrctLlwGYG6l8lTQlC2cGup-1ATqjwvi1kh92oTeriQIjeB-tucf_Jw--9n6a65Zlk&_nc_zt=23&_nc_ht=scontent.fdac138-2.fna&_nc_gid=nYcgEBsRGC1DrVSrWjyNjA&_nc_ss=7b2a8&oh=00_Af8mGbCqtVwpRIaG8FZJq_0QLxpWv_uXmrfLtbLZijR_2g&oe=6A25A036',
-          'https://scontent.fdac138-2.fna.fbcdn.net/v/t39.30808-6/714085149_994771603098105_5797864671435428014_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=WgWwEZ6ooM4Q7kNvwFxm8eG&_nc_oc=AdrBvHnHATZmJMRDBc-KndQdIlv5Sayrs48_xigUwPv9C_KMPa19LFCY4bcf3WOdDC8&_nc_zt=23&_nc_ht=scontent.fdac138-2.fna&_nc_gid=nYcgEBsRGC1DrVSrWjyNjA&_nc_ss=7b2a8&oh=00_Af-bS5zdSaYAQh7VSPn30-2HGHJ7ZFAY_oSC7AxPAJ0WLw&oe=6A25C257',
-          'https://scontent.fdac138-2.fna.fbcdn.net/v/t39.30808-6/715540329_994780133097252_891881290888773583_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=3ZozSlQ0NOIQ7kNvwEV9Mwg&_nc_oc=Ado2aBcoM_MTd2MmjU8mediYrc4Vv_PTe2Hij9Wqoajc0jCQdbHIXmibzSKULesvfkw&_nc_zt=23&_nc_ht=scontent.fdac138-2.fna&_nc_gid=nYcgEBsRGC1DrVSrWjyNjA&_nc_ss=7b2a8&oh=00_Af_qZW5kqG5iEWyEqjYLD5zSPv1k_YSqF0wvSZbOBN0oUw&oe=6A25BF92'
+          'https://lh3.googleusercontent.com/d/11HiDVwFv9DqLGF8_AZG2VhJjKvYM81vC',
+          'https://lh3.googleusercontent.com/d/1u_Achh84RK82E2nOB1VUm9Wzp0bbzfB3',
+          'https://lh3.googleusercontent.com/d/1uhyi0ZY0-bV-bJGXK0km2_y8t8Qu8ZS2',
+          'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200'
         ],
         googleMapsUrl: 'https://maps.google.com/?q=Joydebpur+Gazipur',
       },
@@ -330,14 +329,13 @@ const translations = {
         facing: 'পূর্বমুখী',
         status: 'প্রস্তুত',
         features: ['২টি লিফট', '২৪/৭ নিরাপত্তা', 'পার্কিং', 'জেনারেটর', 'সাব-স্টেশন'],
-        imageUrl: 'https://scontent.fdac138-2.fna.fbcdn.net/v/t39.30808-6/714383579_995889942986271_8505767854631164332_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ETsexLEK7s8Q7kNvwEhWb7z&_nc_oc=AdpCstDeM0Gpywa_2dwkRjXo-IoBMvrb7MoGOjJ_QmGwvxSLZTWKlYoc2D6K45-T2XQ&_nc_zt=23&_nc_ht=scontent.fdac138-2.fna&_nc_gid=M0ESZUbMYYCkYEx0cjSSKw&_nc_ss=7b2a8&oh=00_Af8CqjN6l17AFeDQvGAOx8E0YXswJvVwALyP3ATEskQYFw&oe=6A274B99',
+        imageUrl: 'https://lh3.googleusercontent.com/d/11HiDVwFv9DqLGF8_AZG2VhJjKvYM81vC',
         images: [
-          'https://scontent.fdac138-2.fna.fbcdn.net/v/t39.30808-6/714383579_995889942986271_8505767854631164332_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ETsexLEK7s8Q7kNvwEhWb7z&_nc_oc=AdpCstDeM0Gpywa_2dwkRjXo-IoBMvrb7MoGOjJ_QmGwvxSLZTWKlYoc2D6K45-T2XQ&_nc_zt=23&_nc_ht=scontent.fdac138-2.fna&_nc_gid=M0ESZUbMYYCkYEx0cjSSKw&_nc_ss=7b2a8&oh=00_Af8CqjN6l17AFeDQvGAOx8E0YXswJvVwALyP3ATEskQYFw&oe=6A274B99',
-          'https://scontent.fdac138-2.fna.fbcdn.net/v/t39.30808-6/715291267_995889886319610_6385127719888871707_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=pq63u7lxAaQQ7kNvwFVvULP&_nc_oc=Adrwh17MDlzDKKyhGzjOdFePmqlzJcaExP-bctVMU-Ze5iX7W1--BVYqaRBys5gmS9E&_nc_zt=23&_nc_ht=scontent.fdac138-2.fna&_nc_gid=EAGTrOY6oEddOafuvRSu-A&_nc_ss=7b2a8&oh=00_Af-r_GWz7FTN5dMhT6IIhpFqwG9PXIaEK0i6FT_M-6r2Jg&oe=6A2763EA',
-          'https://scontent.fdac138-1.fna.fbcdn.net/v/t39.30808-6/714852639_995890022986263_447910061425228364_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=B80QU4LWGCQQ7kNvwGXlaMz&_nc_oc=AdrfjcEvUIwTD9sW1QgfoLbvhdnp313847Gz9X9F2O-oIBOitJQRXk5EDF0SS1lP35w&_nc_zt=23&_nc_ht=scontent.fdac138-1.fna&_nc_gid=KERi_56c2ZfLQ-C-fIEyUw&_nc_ss=7b2a8&oh=00_Af-ztnjc5NF4kFHmFSl0-ekmghT8Zs8IaPBPaAYZWfAF_g&oe=6A2760B4',
-          'https://scontent.fdac138-1.fna.fbcdn.net/v/t39.30808-6/714723251_995890082986257_5173604162516039693_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=REXRkWyszgsQ7kNvwHn3tjh&_nc_oc=AdqbruAVvQwH0AfrB6JXkgb-aTF_bmoPEE6zIs_fkF-QT-xZlcdPw_29PHl4ZLzQnbU&_nc_zt=23&_nc_ht=scontent.fdac138-1.fna&_nc_gid=zTf1FepCggbSacdJoN-6Rw&_nc_ss=7b2a8&oh=00_Af9v5R8A7-b1p8zUNHfevmCWBSyFVqZAPHAexqXdLwYVJg&oe=6A276133',
-          'https://scontent.fdac138-2.fna.fbcdn.net/v/t39.30808-6/714851494_995890059652926_9021158554923691026_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=wHvjxODm6FUQ7kNvwHQiv7r&_nc_oc=AdqrpPzuG5_YjPrS-j2eqs4Rus84cqZIaZwtAjPL4ZrlwH7O7TZotZLrywbBi-6OKig&_nc_zt=23&_nc_ht=scontent.fdac138-2.fna&_nc_gid=Fm4ifkuI-y0YKt0ygJIubQ&_nc_ss=7b2a8&oh=00_Af-W7PVl3x76WFZjfAd6A6fHRZLp-PFeRT3CPc6CSwbyLg&oe=6A275521',
-          'https://scontent.fdac138-2.fna.fbcdn.net/v/t39.30808-6/716431210_995889889652943_8564696464819572722_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=JF5T_TpYgrUQ7kNvwEBmGo5&_nc_oc=AdqkW9e7aZgseYuuMaCYDa0EhKi1Sb7ahbT_KUIEYXrE4uvUODeF28BE9NKkTWDDao0&_nc_zt=23&_nc_ht=scontent.fdac138-2.fna&_nc_gid=HxEv2GrIE4OPGh3eadm-nQ&_nc_ss=7b2a8&oh=00_Af-mfj6Nrq4siZLLeaUEc7huGP9kM_8OKDHWWWbr1bcAgA&oe=6A2751F5'
+          'https://lh3.googleusercontent.com/d/11HiDVwFv9DqLGF8_AZG2VhJjKvYM81vC',
+          'https://lh3.googleusercontent.com/d/1u_Achh84RK82E2nOB1VUm9Wzp0bbzfB3',
+          'https://lh3.googleusercontent.com/d/1uhyi0ZY0-bV-bJGXK0km2_y8t8Qu8ZS2',
+          'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&q=80&w=1200',
+          'https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&q=80&w=1200'
         ],
         googleMapsUrl: 'https://maps.google.com/?q=Board+Bazar+Gazipur',
       },
